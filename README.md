@@ -22,7 +22,7 @@ Este repositório contém o código para criar uma VM na Azure, instalar Docker,
    cd createVM
 Aplicar a Configuração do Terraform
 
-      Navegue até o diretório do projeto:
+2. Navegue até o diretório do projeto:
          cd /caminho/para/createVM
       Inicialize o Terraform:
       terraform init
