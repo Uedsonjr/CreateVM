@@ -24,9 +24,15 @@ Aplicar a Configuração do Terraform
 
 2. Navegue até o diretório do projeto:
          cd /caminho/para/createVM
+
       Inicialize o Terraform:
-      terraform init
+
+         terraform init
+         
       Verifique o código
-      terraform plan
+
+         terraform plan
+
       Aplique a configuração para criar a VM:
-      terraform apply
+
+       terraform apply
