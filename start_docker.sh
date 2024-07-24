@@ -42,9 +42,9 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: GAud4mZby8F3SD6P
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
+      MYSQL_DATABASE: createVM
+      MYSQL_USER: useradmin
+      MYSQL_PASSWORD: salvepauluk1
 
   wordpress:
     depends_on:
@@ -55,9 +55,9 @@ services:
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress
-      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: useradmin
+      WORDPRESS_DB_PASSWORD: salvepauluk1
+      WORDPRESS_DB_NAME: createVM
 
 volumes:
   db_data:
