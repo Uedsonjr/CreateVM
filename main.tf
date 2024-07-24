@@ -2,7 +2,7 @@ provider "azurerm" {
     features {}
 }
 
-# Criação do Resource Group para todos os recursos
+# Criação do Resource Group para todos os recursoster
 resource "azurerm_resource_group" "createVM" {
     name     = var.resource_group_name
     location = var.location
@@ -51,7 +51,7 @@ resource "azurerm_virtual_machine" "vm" {
     location              = azurerm_resource_group.createVM.location
     resource_group_name   = azurerm_resource_group.createVM.name
     network_interface_ids = [azurerm_network_interface.nic.id]
-    vm_size               = "Standard_E2s_v3"
+    vm_size               = "Standard_B1s"
 
     storage_os_disk {
         name              = "createVM-os-disk"
@@ -63,7 +63,7 @@ resource "azurerm_virtual_machine" "vm" {
     storage_image_reference {
         publisher = "Canonical"
         offer     = "UbuntuServer"
-        sku       = "22.04-LTS"
+        sku       = "24.04-LTS"
         version   = "latest"
     }
 
